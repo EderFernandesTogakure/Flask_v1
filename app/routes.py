@@ -16,6 +16,14 @@ def init_app(app):
     @app.route("/")
     def inicio():        
         return render_template("inicio.html")
+
+    @app.route("/financeiro")
+    def financeiro():        
+        return render_template("financeiros.html")
+    
+    @app.route("/produtos")
+    def produtos():        
+        return render_template("produtos.html")
        
     @app.route("/usuario")
     def usuario():        
@@ -25,10 +33,18 @@ def init_app(app):
     def cad_user():        
         return render_template("cad_user.html")
 
+    @app.route("/cad_finan")
+    def cad_finan():      
+        return render_template("cad_finan.html")
+
        
     @app.route("/atualiza_user")
     def atualiza_user():        
         return render_template("atualiza_user.html")
+
+    @app.route("/atualiza_finan")
+    def atualiza_finan():        
+        return render_template("atualiza_finan.html")
 
     
     

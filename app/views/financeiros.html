@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="box-header">
-        <h3 class="box-title">Cadastro de produto</h3>
+        <h3 class="box-title">Cadastro de financeiro</h3>
       </div><!-- /.box-header -->
       <div class="box">
         <div class="car">
@@ -26,8 +26,8 @@
               <thead>
                   <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Produto</th>
-                    <th scope="col">Tipo</th>
+                    <th scope="col">Banco</th>
+                    <th scope="col">Agencia</th>
                     <th scope="col">Data</th>
                     <th scope="col">Alterar</th>                     
                     <th scope="col">Excluir</th>
@@ -36,17 +36,17 @@
               <tbody>
                   <tr>
                     <td><a href="{{url_for('usuario')}}">1</a></td>
-                    <td>Esponja de aço para careca</td>
-                    <td>tipo 2</td>
+                    <td>Nubank</td>
+                    <td>007</td>
                     <td>14-04-2034</td>
-                    <td><a href="{{url_for('atualiza_prod')}}"><span class="label label-success"><i class="fa-solid fa-pencil"></i> Alterar</span></a></td>
+                    <td><a href="{{url_for('atualiza_finan')}}"><span class="label label-success"><i class="fa-solid fa-pencil"></i> Alterar</span></a></td>
                     <td><a href="{{url_for('usuario')}}"><span class="label label-danger"><i class="fa-solid fa-eraser"></i> Excluir</span></a></td>
                   </tr>
                
                            
               </tbody>
           </table>
-          <a href="{{url_for('cad_prod')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Inserir produtos</a>
+          <a href="{{url_for('cad_finan')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Inserir finanças</a>
        </div>      
     </div>        
   </div>
